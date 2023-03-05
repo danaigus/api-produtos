@@ -1,5 +1,6 @@
 import express from 'express'
 import ProductRoutes from './routes/product.routes.js'
+import UserRoutes from './routes/user.routes.js'
 
 const app = express()
 
@@ -11,5 +12,6 @@ app.get('/', (_req, res) => {
 })
 
 app.use('/api', ProductRoutes)
+app.use('/api', UserRoutes)
 
 export default app

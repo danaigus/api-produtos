@@ -1,10 +1,7 @@
 import mongoose from 'mongoose'
 import app from './app.js'
-import * as dotenv from 'dotenv'
 
 const PORT = process.env.PORT || 4001
-
-dotenv.config()
 
 mongoose
   .connect(process.env.MONGODB_URI)
